@@ -25,3 +25,7 @@ Para abrir Adminer ir a
 > localhost:${PORT_ADM}
 
 e ingresar con las credenciales guardadas en el archivo **.env**
+
+5. Se puede ejecutar un SEED para cargar información de prueba en la BD.
+
+> localhost:3000/api/seed
