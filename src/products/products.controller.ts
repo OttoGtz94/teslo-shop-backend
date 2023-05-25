@@ -14,8 +14,10 @@ import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { PaginationDto } from 'src/common/dtos/pagination.dto';
 import { Product } from './entities/product.entity';
+import { Auth } from 'src/auth/decorators/auth.decorator';
 
 @Controller('products')
+@Auth() // Esto significa que debe de estar autenticado para cualquiera de estas rutas
 export class ProductsController {
   constructor(private readonly productsService: ProductsService) {}
 
